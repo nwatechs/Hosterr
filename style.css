@@ -117,11 +117,11 @@ div.footer-right {
 
 @media screen and (max-width: 600px) {
         body {
-            padding: 0vh 0vw 25vh 0vw;
+            padding: 0vh 0vw 45vh 0vw;
+
         }
     
         div.left {
-            /* display: flex; */
             gap: 5vw;
         }
     
@@ -134,11 +134,29 @@ div.footer-right {
        div.content {
             flex-direction:column-reverse;
        }
+       div.subscribe {
+            flex-direction: column;
+            gap: 3vw;
+       }
+       input {
+            padding:2vh 43vw 2vh 3vw;
+       }
+       div.subscribe button {
+           border-radius: 1vw;
+           padding: 1vh 0vw;
+           margin-right: 5vw;
+        }
+       div.unscribe img {
+            width: 4vw;
+       }
+       div.unscribe p {
+        font-size: 3vw;
+       }
        div.pics img {
-            margin-top: -10vh;
+            margin-top: -15vh;
        }
        h1 {
-        margin-top: -10vh;
+        margin-top: -5vh;
        }
        p.first {
             font-size: 3vw;
@@ -154,6 +172,7 @@ div.footer-right {
        }
            div.footer-left {
            gap: 5vw;
+           font-size: 3vw;
         }
          div.footer-right {
             margin-left: 8vw;
@@ -161,3 +180,87 @@ div.footer-right {
          }  
    
 }
+
+ @media screen and (min-width: 601px) and (max-width: 1000px) {
+    body {
+        padding: 0vh 0vw 65vh 0vw;
+
+    }
+
+    div.left {
+        margin-left: -50vw;
+        gap: 3vw;
+    }
+
+    div.center {
+        display: none;
+    }
+
+    div.right {
+        display: none;
+    }
+
+    div.content {
+        flex-direction: column-reverse;
+    }
+    h1 br{
+        display: none;
+    }
+    div.subscribe {
+        gap: 3vw;
+    }
+
+    input {
+        padding: 1vh 3vw;
+    }
+
+    div.subscribe button {
+        border-radius: 0.5vw;
+        padding: 0.5vh 3vw;
+    }
+
+    div.unscribe img {
+        width: 2vw;
+    }
+
+    div.unscribe p {
+        font-size: 2vw;
+    }
+
+    div.pics img {
+        margin-top: -18vh;
+        margin-left: 20vw;
+    }
+
+    h1 {
+        margin-top: -15vh;
+    }
+
+    p.first {
+        font-size: 2vw;
+        line-height: 2vh;
+        margin-top: 1vh;
+
+    }
+
+    p.first br {
+        display: none;
+    }
+
+    div.footer {
+        gap: 5vw;
+        margin-top: 5vh;
+    }
+
+    div.footer-left {
+        gap: 3vw;
+        font-size: 2vw;
+    }
+
+    div.footer-right {
+        margin-left: 8vw;
+
+    }
+
+}
+
